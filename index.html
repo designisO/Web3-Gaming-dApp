@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Game dApp</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+    <script src="//cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.min.js"></script>
+    <style>
+      html, 
+      body, 
+      pre, 
+      code, 
+      kbd, 
+      samp {
+          font-family: 'Press Start 2P', Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  
+  <body style = "margin: 20px">
+    <!-- Wallet Login and Logout-->
+    <div class="nes-container with-title is-rounded is-centered">
+        <p class="title">Web3 Gaming dApp</p>
+        <p>Please login by clicking "Wallet Login".</p>
+        <p>Once done, refresh page to begin playing game.</p>
+        <button type="button" class="nes-btn is-primary" id="btn-login">Wallet Login</button>
+        <button type="button" class="nes-btn is-normal" id="btn-logout">Logout</button>
+        <button type="button" class="nes-btn is-warning" onclick="document.getElementById('dialog-dark-rounded').showModal();">
+            About Dev
+            </button>
+            <dialog class="nes-dialog is-rounded is-dark" id="dialog-dark-rounded">
+            <form method="dialog">
+                <p class="title">Web3 Gaming dApp</p>
+                <p>Greetings, my name is Orion.</p>
+                <p>I am a self taught developer with focus on Web3.</p>
+                <p>Remember, keep your VISION further than your EYESIGHT.</p>
+                <menu class="dialog-menu">
+                <button class="nes-btn is-success">Yay!</button>
+                <button class="nes-btn">Nay!</button>
+                </menu>
+            </form>
+            </dialog>
+    </div>
+
+
+    
+    <script type="text/javascript" src="./main.js"></script>
+
+    
+    <script src="game.js"></script>    
+    
+  </body>
+</html>
