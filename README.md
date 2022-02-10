@@ -1,7 +1,7 @@
 # Web3 Gaming dApp
 
-<img src="#">
-<img src="#">
+<img src="https://github.com/designisO/Web3-Gaming-dApp/blob/main/img/Screenshot%20(9).png">
+
 
 ## Description
 
